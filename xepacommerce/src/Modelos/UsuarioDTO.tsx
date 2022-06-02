@@ -2,7 +2,7 @@ interface Usuario {
     nome?: string;
     email?: string;
     senha?: string;
-    endereço?: string;
+    endereco?: string;
     tipo?: string;
 }
 export default Usuario;
