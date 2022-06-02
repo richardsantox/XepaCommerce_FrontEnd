@@ -1,0 +1,25 @@
+.cor-barra2{
+    background: linear-gradient(135deg, #0cc5b7 0%,#2bd891 100%) !important;
+}
+
+.botão-navbar2{
+    border-radius: 5px 5px  !important;
+    margin-left: 0;
+    margin-right: 5px;
+    font-weight: 500;
+    height: 35px;
+    text-transform: uppercase;
+    border: medium none;
+    font-size: 13px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 1 !important;
+    background: linear-gradient(135deg, #ff934b 0%,#ff5e62 100%);
+    cursor: pointer;
+}
+
+.link{
+    cursor: pointer;
+}

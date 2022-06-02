@@ -1,0 +1,20 @@
+.cor-barra{
+    background-color: #2b2b2b !important;
+}
+
+.size-barra{
+    min-height: 10px !important;
+}
+
+.redes{
+  color: white;
+}
+
+.login{
+  color: white;
+  text-decoration: none;
+}
+
+.text-decorator-none{
+  text-decoration: none;
+}
