@@ -1,5 +1,5 @@
-interface Usuario{
-    email?: string| null;
-    senha?: string| null;
+interface Autenticacao {
+    email?: string | null;
+    senha?: string | null;
 }
-export default Usuario;
+export default Autenticacao;
