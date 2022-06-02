@@ -1,0 +1,52 @@
+#carousel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(21, 178, 178);
+    border-radius: 30px;
+    width: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: aqua;
+}
+
+
+
+
+article img {
+    width: 300px;
+    margin-left: 3px;
+    border-radius: 30%;
+}
+
+.btd {
+    left: 95%;
+    top: 30%;
+    bottom: 30%;
+    position: absolute;
+    height: 40px;
+}
+
+.bte {
+    top: 30%;
+    position: absolute;
+    height: 40px;
+}

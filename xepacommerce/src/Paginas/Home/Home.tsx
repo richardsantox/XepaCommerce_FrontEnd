@@ -1,11 +1,11 @@
-
+import React from 'react'
+import Carrossel from '../../Components/Carrossel/Carrossel'
 
 function Home() {
 
     return(
         <>
-            <h1>ROI LUCAS ?</h1>
-            
+           <Carrossel/>
         </>
     );
 }
