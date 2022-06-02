@@ -1,6 +1,7 @@
 import Produtos from './Paginas/Produtos/Produtos';
 import SobreNos from './Paginas/SobreNos/SobreNos';
 import Contato from './Paginas/Contato/Contato';
+import CadastroUsuario from './Paginas/CadastroUsuario/CadastroUsuario';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Paginas/Home/Home';
@@ -17,6 +18,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/sobrenos" element={<SobreNos />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/cadastrousuario" element={<CadastroUsuario />} />
         </Routes>
       </div>
       <Footer />

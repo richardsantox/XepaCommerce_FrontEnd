@@ -1,18 +1,18 @@
-.linha{
+.linha {
     width: 100%;
     border-bottom: 1px solid hsla(34, 9%, 66%, 0.493);
 }
 
-.imgxepa{
+.imgxepa {
     margin: 15px;
     max-width: 60%;
 }
 
-.img{
+.img {
     margin: 30px !important;
 }
 
-.titulo1{
+.titulo1 {
     width: 197px;
     text-align: center;
     padding: 0 20px 20px 20px;
@@ -20,39 +20,40 @@
     color: white;
 }
 
-.Metodospagamento{
-    margin-top:30px;
+.Metodospagamento {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.titulo2{
-    background-color:#2b2b2b;
+.titulo2 {
+    background-color: #2b2b2b;
     color: white;
     font-size: 1px;
 }
 
-.link{
+.link {
     text-decoration: none !important;
 }
 
-.Btx{
-    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
-    margin: 30px !important;
-    padding: 15px 45px;
-    text-align: center;
-    transition: all .3s ease-in-out !important;
-    background-size: 200% auto;
-    color: white !important;            
+.Btx {
+    margin-top: 30px !important;
+    background-color: #002878;
+    background-image: linear-gradient(45deg, #23D39B 0%, #fcb900 55%, #f04e0e 90%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: white !important;
     border-radius: 50px !important;
-    font-size: 10px  !important ;
-    box-shadow: 0 1px 2px black;
-    text-decoration: none !important;
+    padding: 12px 48px;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: all 0.5s ease !important;
 
 }
 
 
-.Btx:hover{
-    transform:scale(1.10,1.10);
-    color: #fff !important;
-    text-decoration: none !important;
+.Btx:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0) !important;
+    background-position: 0 0 !important;
 }
