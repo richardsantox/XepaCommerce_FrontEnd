@@ -1,0 +1,12 @@
+.modal {
+    background-color: rgb(169, 154, 169);
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 40px;
+    border-radius: 4px;
+  }
