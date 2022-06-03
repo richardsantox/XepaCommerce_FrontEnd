@@ -18,7 +18,7 @@ function CadastroUsuario() {
             email: "",
             senha: "",
             endereco: "",
-            tipo: ""
+            tipo: "NORMAL"
         }
     );
 
@@ -28,13 +28,13 @@ function CadastroUsuario() {
             email: "",
             senha: "",
             endereco: "",
-            tipo: ""
+            tipo: "NORMAL"
         }
     );
 
     useEffect(() => {
 
-        if (usuarioResultado.email === '@') {
+        if (usuarioResultado.email?.includes('@')) {
             navigate('/login');
         }
 
@@ -58,12 +58,11 @@ function CadastroUsuario() {
 
         if (confirmarSenha === usuario.senha) {
             try {
-                await cadastroUsuario(`/api/Usuarios/cadastrar`, usuario, setUsuarioResultado)
-                alert('Usuario cadastrado com sucesso')
+                await cadastroUsuario(`/api/Usuarios`, usuario, setUsuarioResultado)
+                alert('Usuario Cadastrado com sucesso')
             } catch (error) {
-                alert('Usuario já cadastrado, tente outro email!')
+                alert('Erro no formulário, tente novamente')
             }
-
         } else {
             alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
         }
