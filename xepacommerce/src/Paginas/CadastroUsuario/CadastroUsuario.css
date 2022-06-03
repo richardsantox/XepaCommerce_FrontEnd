@@ -1,12 +1,21 @@
 .imagem2 {
-    background-image: url(../../assets/img/maca.jpg);
+    background-image: url(../../assets/img/1.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    margin-top: 10px !important;
-    margin-bottom: 50px !important;
+    margin-top: 4px !important;
+}
+
+.imagem3 {
+    background-image: url(../../assets/img/2.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 4px !important;
 }
 
 .textos2 {
@@ -23,9 +32,9 @@
     border-radius: 50px !important;
     padding: 12px 48px;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 200 !important;
     text-decoration: none;
-    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35) !important;
     transition: all 0.5s ease !important;
 }
 

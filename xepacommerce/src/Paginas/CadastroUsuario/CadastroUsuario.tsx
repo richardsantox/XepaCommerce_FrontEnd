@@ -120,7 +120,7 @@ function CadastroUsuario() {
                     </form>
                 </Box>
             </Grid>
-            <Grid item xs={3} className='imagem2'></Grid>
+            <Grid item xs={3} className='imagem3'></Grid>
         </Grid>
     );
 }
