@@ -1,7 +1,8 @@
 import React, { ChangeEvent, MouseEvent, useState } from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Button, Grid, Link, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Button, Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
+import { Link } from 'react-router-dom';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -49,7 +50,7 @@ export default function Navbar() {
               </Box>
             </Grid>
             <Grid xs={6}>
-              <Link className='text-decorator-none'>
+              <Link to='/logar' className='text-decorator-none'>
                 <Box display="flex" justifyContent="flex-end">
                   <Button color="inherit" className='login'>
                     <AccountBox className='login' />

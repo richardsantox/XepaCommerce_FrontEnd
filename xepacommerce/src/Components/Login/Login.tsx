@@ -51,35 +51,35 @@ function Login() {
 
     return (
         <>
-               <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid item xs={3}></Grid>
-            <Grid item xs={6} alignItems='center'>
-                <Box paddingX={10}>
-                    <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Login</Typography>
+            <Grid container direction='row' justifyContent='center' alignItems='center'>
+                <Grid item xs={3}></Grid>
+                <Grid item xs={6} alignItems='center'>
+                    <Box paddingX={10}>
+                        <form onSubmit={onSubmit}>
+                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Login</Typography>
 
-                        <TextField
-                            value={autenticacao.email}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='email' label='E-mail' variant='outlined' name='email' margin='normal' type='email' fullWidth />
+                            <TextField
+                                value={autenticacao.email}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                id='email' label='E-mail' variant='outlined' name='email' margin='normal' type='email' fullWidth />
 
-                        <TextField
-                            value={autenticacao.senha}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                            <TextField
+                                value={autenticacao.senha}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
 
-                        <Grid container direction="row" justifyContent="space-between" alignItems="center">
-                            <Box marginY={2} textAlign='center'>
-                                <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
-                                    Login
-                                </Button>
-                            </Box>
-                        </Grid>
-                    </form>
-                </Box>
+                            <Grid container direction="row" justifyContent="space-between" alignItems="center">
+                                <Box marginY={2} textAlign='center'>
+                                    <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
+                                        Login
+                                    </Button>
+                                </Box>
+                            </Grid>
+                        </form>
+                    </Box>
+                </Grid>
+                <Grid item xs={3}></Grid>
             </Grid>
-            <Grid item xs={3}></Grid>
-        </Grid>
         </>
     );
 }
