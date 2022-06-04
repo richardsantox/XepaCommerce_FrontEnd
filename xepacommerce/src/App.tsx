@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Paginas/Home/Home';
 import Footer from './Components/Footer/Footer';
+import Logar from './Paginas/Login/Login';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/sobrenos" element={<SobreNos />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+          <Route path="/logar" element={<Logar />} />
         </Routes>
       </div>
       <Footer />

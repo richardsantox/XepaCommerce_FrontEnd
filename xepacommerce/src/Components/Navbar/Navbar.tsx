@@ -1,4 +1,4 @@
-import { ChangeEvent, MouseEvent, useState } from 'react';
+import React, { ChangeEvent, MouseEvent, useState } from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Grid, Link, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
@@ -28,20 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Navbar() {
   const classes = useStyles();
-  const [aberto, setAberto] = useState<boolean>(false)
 
-  function ligar(){
-    setAberto(true)
-  }
-
-  function fechar(){
-
-    
-    setAberto((aberto) => false)
-
-    
-
-  }
 
   return (
     <div className={classes.root}>
@@ -64,9 +51,8 @@ export default function Navbar() {
             <Grid xs={6}>
               <Link className='text-decorator-none'>
                 <Box display="flex" justifyContent="flex-end">
-                  <Button color="inherit" className='login' onClick={ligar}>
-                    <Login aberto={aberto} fecharModal={fechar}/>
-                    <AccountBox className='login'/>
+                  <Button color="inherit" className='login'>
+                    <AccountBox className='login' />
                     <Typography className='login'>
                       Login
                     </Typography>

@@ -35,7 +35,7 @@ function CadastroUsuario() {
     useEffect(() => {
 
         if (usuarioResultado.email?.includes('@')) {
-            navigate('/login');
+            navigate('/logar');
         }
 
     }, [usuarioResultado, navigate]);
@@ -104,7 +104,7 @@ function CadastroUsuario() {
 
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
                             <Box marginY={2} textAlign='center'>
-                                <Link to='/login' className='text-decorator-none'>
+                                <Link to='/home' className='text-decorator-none'>
                                     <Button variant='outlined' className='btnCancelar'>
                                         Cancelar
                                     </Button>
