@@ -1,11 +1,11 @@
+import React, { useState, ChangeEvent, useEffect } from 'react';
 import { Button, Grid, TextField, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
-import React, { useState, ChangeEvent, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import Autenticacao from '../../Modelos/AutenticacaoDTO';
 import { login } from '../../Services/Service';
-import './Login.css'
+import './Login.css';
 
 function Login() {
 
@@ -33,11 +33,13 @@ function Login() {
 
         try {
 
-            await login(`/api/Usuarios/logar`, autenticacao, setToken);
-
+            await login(`/api/Autenticacao`, autenticacao, setToken);
             alert('Usuário logado com sucesso!');
+
         } catch (error) {
+
             alert('Dados do usuário inconsistentes. Erro ao logar!');
+        
         }
     }
 
