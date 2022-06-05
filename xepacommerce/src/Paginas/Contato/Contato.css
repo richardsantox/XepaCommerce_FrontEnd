@@ -1,0 +1,23 @@
+.container{
+    background-color: #da8484;
+}
+.titulo{
+    font-weight: 450 !important;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(63, 62, 62);
+}
+
+.linha{
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.caixa{
+    margin-bottom: 25px !important;
+}
+
+.btnEnviar{
+    background: linear-gradient(45deg, #0EC6B6 40%,  #618cf7 100%);
+    font-size: 16px !important;
+    color: white !important;
+}
