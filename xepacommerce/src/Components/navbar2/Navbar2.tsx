@@ -3,7 +3,9 @@ import { alpha, makeStyles, Theme, createStyles } from '@material-ui/core/styles
 import { AppBar, Toolbar, IconButton, Typography, InputBase, Badge, MenuItem, Menu, Link } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import logoxepa from '../../assets/img/NovoXepa.png';
 import "./navbar2.css";
+import { Box } from '@mui/material';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -13,19 +15,14 @@ const useStyles = makeStyles((theme: Theme) =>
     menuButton: {
       marginRight: theme.spacing(2),
     },
-    title: {
-      display: 'none',
-      [theme.breakpoints.up('sm')]: {
-        display: 'block',
-      },
-    },
     search: {
       position: 'relative',
       borderRadius: theme.shape.borderRadius,
       backgroundColor: alpha(theme.palette.common.white, 1),
       '&:hover': {
-        backgroundColor: alpha(theme.palette.common.white, 0.25),
+        backgroundColor: alpha(theme.palette.common.white, 0.85),
       },
+      boxShadow: '2px 4px 7px rgba(0, 0, 0, 0.2)',
       marginRight: theme.spacing(2),
       marginLeft: 0,
       width: '100%',
@@ -61,7 +58,7 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.up('md')]: {
         display: 'flex',
       },
-      marginLeft: '30px',
+      marginLeft: '10em',
       paddingRight: '25px',
       paddingLeft: '25px',
     },
@@ -95,8 +92,8 @@ export default function Navbar2() {
     handleMobileMenuClose();
   };
 
- 
- 
+
+
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -115,42 +112,46 @@ export default function Navbar2() {
 
 
   return (
-    <div className={classes.grow}>
+    <>
       <AppBar position="static" className='cor-barra2'>
         <Toolbar>
-          <Typography className={classes.title} variant="h6" noWrap>
-            XepaCommerce
-          </Typography>
-          
-          <div className={classes.grow} />
-          <button className='botão-navbar2'>Search</button>
-         
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div>
+          <Box display="flex"  alignItems='center' className='barra2'>
+            
+            <Box>
+              <img src={logoxepa} alt='logoxepa' className='logo' />
+            </Box>
 
-          <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit" >
-              <Badge badgeContent={4} color="secondary">
-                <ShoppingCartIcon />
-              </Badge>
-            </IconButton>
-          </div>
+            <Box className='barra-de-pesquisa'>
+              <button className='botão-navbar2'>Search</button>
+              <div className={classes.search}>
+                <div className={classes.searchIcon}>
+                  <SearchIcon />
+                </div>
+                <InputBase 
+                  placeholder="Search"
+                  classes={{
+                    root: classes.inputRoot,
+                    input: classes.inputInput,
+                  }}
+                  inputProps={{ 'aria-label': 'search' }}
+                />
+              </div>
+            </Box>
 
+            <Box>
+              <div className={classes.sectionDesktop}>
+                <IconButton aria-label="show 4 new mails" color="inherit" className='icone-carrinho'>
+                  <Badge badgeContent={1} color="secondary">
+                    <ShoppingCartIcon />
+                  </Badge>
+                </IconButton>
+              </div>
+            </Box>
+
+          </Box>
         </Toolbar>
       </AppBar>
       {renderMenu}
-    </div>
+    </>
   );
 }

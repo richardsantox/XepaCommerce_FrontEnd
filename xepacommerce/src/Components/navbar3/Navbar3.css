@@ -1,3 +1,15 @@
 .cor-barra3{
     flex-wrap: wrap;
 }
+
+.link-paginas{
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+}
+
+.link-paginas:hover {
+    transition: 0.3s;
+    background: linear-gradient(135deg, #ff934b 0%,#ff5e62 100%);
+    color: aliceblue;
+}

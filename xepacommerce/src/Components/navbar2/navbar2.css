@@ -1,5 +1,6 @@
 .cor-barra2{
     background: linear-gradient(135deg, #0cc5b7 0%,#2bd891 100%) !important;
+    flex-wrap: wrap;
 }
 
 .botão-navbar2{
@@ -20,6 +21,21 @@
     cursor: pointer;
 }
 
-.link{
-    cursor: pointer;
+.barra2{
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.barra-de-pesquisa{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.logo{
+    width:17rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

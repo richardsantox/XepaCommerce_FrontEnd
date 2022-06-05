@@ -1,9 +1,10 @@
-import { Grid, Typography, Button, Link } from '@material-ui/core';
+import { Grid, Typography, Button} from '@material-ui/core';
 import { Box } from '@mui/material';
 import logoxepa from '../../assets/img/NovoXepa.png';
 import metodos from '../../assets/icons/metodos.png';
-
+import { Link } from 'react-router-dom';
 import './Footer.css';
+
 
 function Footer() {
 
@@ -28,7 +29,7 @@ function Footer() {
 
                 <Grid xs={4}>
                     <Box display='flex' justifyContent='center'>
-                        <Link className='link'>
+                        <Link to='/contato' className='link'>
                             <Button className='Btx' type='submit'>
                                 Contatos
                             </Button>
@@ -39,7 +40,7 @@ function Footer() {
             </Grid>
 
             <Box>
-                <Typography className='titulo2' variant='subtitle2' align="center" gutterBottom>Copyright 2022.XepaCommerce. All rights reserved</Typography>
+                <Typography className='titulo2' variant='subtitle2' align="center" >Copyright 2022.XepaCommerce. All rights reserved</Typography>
             </Box>
 
         </>

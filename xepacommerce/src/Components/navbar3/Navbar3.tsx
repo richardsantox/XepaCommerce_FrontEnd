@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Grid } from '@material-ui/core';
 import { Box } from '@mui/material';
+import { Link } from 'react-router-dom';
 import "./Navbar3.css";
 
 
@@ -12,31 +13,39 @@ function Navbar3() {
                 <Toolbar variant="dense">
                     <Grid xs={12} >
                         <Box display="flex" justifyContent='center' className='cor-barra3'>
-
-                            <Box mx={1} className='cursor' paddingX={3}>
-                                <Typography variant="h6" color="inherit">
-                                    Home 
-                                </Typography>
-                            </Box>
-
-                            <Box mx={1} className='cursor' paddingX={3}>
-                                <Typography variant="h6" color="inherit">
-                                    Produtos
-                                </Typography>
-                            </Box>
-
-                            <Box mx={1} className='cursor' paddingX={3}>
-                                <Typography variant="h6" color="inherit">
-                                    Contato
-                                </Typography>
-                            </Box>
-
-                            <Box mx={1} className='cursor' paddingX={3}>
-                                <Typography variant="h6" color="inherit">
-                                    Sobre nós 
-                                </Typography>
-                            </Box>
-
+                            
+                            <Link to='/home' className='link-paginas'>
+                                <Box mx={1} paddingX={3}>
+                                    <Typography >
+                                        Home 
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            
+                            <Link to='produtos' className='link-paginas'>
+                                <Box mx={1} paddingX={3}>
+                                    <Typography >
+                                        Produtos
+                                    </Typography>
+                                </Box>
+                            </Link>
+                                                        
+                            <Link to='sobrenos' className='link-paginas'>
+                                <Box mx={1} paddingX={3}>
+                                    <Typography >
+                                        Sobre nós 
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            
+                            <Link to='contato' className='link-paginas'>
+                                <Box mx={1} paddingX={3}>
+                                    <Typography >
+                                        Contato
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            
                         </Box>
                     </Grid>
                 </Toolbar>
