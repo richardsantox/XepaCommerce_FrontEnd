@@ -6,6 +6,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import logoxepa from '../../assets/img/NovoXepa.png';
 import "./navbar2.css";
 import { Box } from '@mui/material';
+import CarrinhoLateral from '../CarrinhoLateral/CarrinhoLateral';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -140,11 +141,7 @@ export default function Navbar2() {
 
             <Box>
               <div className={classes.sectionDesktop}>
-                <IconButton aria-label="show 4 new mails" color="inherit" className='icone-carrinho'>
-                  <Badge badgeContent={1} color="secondary">
-                    <ShoppingCartIcon />
-                  </Badge>
-                </IconButton>
+                <CarrinhoLateral/>
               </div>
             </Box>
 
