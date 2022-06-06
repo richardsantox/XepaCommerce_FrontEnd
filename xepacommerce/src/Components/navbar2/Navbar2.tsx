@@ -1,11 +1,10 @@
 import React from 'react';
 import { alpha, makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Typography, InputBase, Badge, MenuItem, Menu } from '@material-ui/core';
+import { AppBar, Toolbar, InputBase, MenuItem, Menu } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import logoxepa from '../../assets/img/NovoXepa.png';
 import "./navbar2.css";
-import { Box, Button } from '@mui/material';
+import { Box } from '@mui/material';
 import CarrinhoLateral from '../CarrinhoLateral/CarrinhoLateral';
 import { Link } from 'react-router-dom';
 

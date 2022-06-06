@@ -2,7 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import { cadastroUsuario } from "../../Services/Service";
 import Usuario from "../../Modelos/UsuarioDTO";
-import { Grid, Typography, Button, TextField, FormControl, InputLabel, Select } from '@material-ui/core';
+import { Grid, Typography, Button, TextField } from '@material-ui/core';
 import { Box } from "@mui/material";
 import './CadastroUsuario.css';
 
