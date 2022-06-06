@@ -1,12 +1,13 @@
 import React from 'react';
 import { alpha, makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Typography, InputBase, Badge, MenuItem, Menu, Link } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Typography, InputBase, Badge, MenuItem, Menu } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import logoxepa from '../../assets/img/NovoXepa.png';
 import "./navbar2.css";
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import CarrinhoLateral from '../CarrinhoLateral/CarrinhoLateral';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -116,10 +117,12 @@ export default function Navbar2() {
     <>
       <AppBar position="static" className='cor-barra2'>
         <Toolbar>
-          <Box display="flex"  alignItems='center' className='barra2'>
-            
+          <Box display="flex" alignItems='center' className='barra2'>
+
             <Box>
-              <img src={logoxepa} alt='logoxepa' className='logo' />
+              <Link to='/home' >
+                <img src={logoxepa} alt='logoxepa' className='logo' />
+              </Link>
             </Box>
 
             <Box className='barra-de-pesquisa'>
@@ -128,7 +131,7 @@ export default function Navbar2() {
                 <div className={classes.searchIcon}>
                   <SearchIcon />
                 </div>
-                <InputBase 
+                <InputBase
                   placeholder="Search"
                   classes={{
                     root: classes.inputRoot,
@@ -141,7 +144,7 @@ export default function Navbar2() {
 
             <Box>
               <div className={classes.sectionDesktop}>
-                <CarrinhoLateral/>
+                <CarrinhoLateral />
               </div>
             </Box>
 
