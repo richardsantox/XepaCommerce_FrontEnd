@@ -58,7 +58,7 @@ function Login() {
                 <Grid item xs={6} alignItems='center'>
                     <Box paddingX={10}>
                         <form onSubmit={onSubmit}>
-                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Login</Typography>
+                            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos3'>Login</Typography>
 
                             <TextField
                                 value={autenticacao.email}
@@ -72,17 +72,18 @@ function Login() {
 
                             <Grid container direction="row" justifyContent="space-between" alignItems="center">
                                 <Box marginY={2} textAlign='center'>
-                                    <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
-                                        Login
-                                    </Button>
-                                </Box>
-                                <Box marginY={2} textAlign='center'>
                                     <Link to='/cadastrousuario' className='text-decorator-none'>
-                                        <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
+                                        <Button type='submit' variant='contained' color='primary' className='btnCadastrar2'>
                                             Cadastre-se
                                         </Button>
                                     </Link>
                                 </Box>
+                                <Box marginY={2} textAlign='center'>
+                                    <Button type='submit' variant='contained' color='primary' className='btnLogin'>
+                                        Login
+                                    </Button>
+                                </Box>
+
                             </Grid>
                         </form>
                     </Box>

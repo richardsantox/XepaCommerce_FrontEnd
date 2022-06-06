@@ -23,7 +23,7 @@
   padding-top: 10px;
 }
 
-.background{
+.background {
   background-color: rgba(0, 0, 0, 0.408);
   display: none;
   z-index: 20;
@@ -32,4 +32,49 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.btnLogin {
+  background-color: #002878;
+  background-image: linear-gradient(45deg, #0EC6B6 0%, #23D39B 55%, #618cf7 90%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 12px 48px;
+  font-size: 16px;
+  font-weight: 200 !important;
+  text-decoration: none;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35) !important;
+  transition: all 0.5s ease !important;
+}
+
+.btnCadastrar2 {
+  background-color: #002878;
+  background-image: linear-gradient(45deg, #FF8C4E 0%, #FF685E 55%, #f04e0e 90%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 12px 48px;
+  font-size: 16px;
+  font-weight: 200;
+  text-decoration: none;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35) !important;
+  transition: all 0.5s ease !important;
+}
+
+.btnLogin:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0) !important;
+  background-position: 0 0 !important;
+}
+
+.btnCadastrar2:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0) !important;
+  background-position: 0 0 !important;
+}
+
+.textos3 {
+  margin-top: 20px !important;
+  font-weight: bold !important;
 }
