@@ -39,7 +39,7 @@ function Login() {
         } catch (error) {
 
             alert('Dados do usuário inconsistentes. Erro ao logar!');
-        
+
         }
     }
 
@@ -75,6 +75,13 @@ function Login() {
                                     <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
                                         Login
                                     </Button>
+                                </Box>
+                                <Box marginY={2} textAlign='center'>
+                                    <Link to='/cadastrousuario' className='text-decorator-none'>
+                                        <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
+                                            Cadastre-se
+                                        </Button>
+                                    </Link>
                                 </Box>
                             </Grid>
                         </form>

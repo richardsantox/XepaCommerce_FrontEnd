@@ -49,16 +49,16 @@ export default function Navbar() {
               </Box>
             </Grid>
             <Grid xs={6}>
-              <Link to='/logar' className='text-decorator-none'>
-                <Box display="flex" justifyContent="flex-end">
+              <Box display="flex" justifyContent="flex-end">
+                <Link to='/logar' className='text-decorator-none'>
                   <Button color="inherit" className='login'>
                     <AccountBox className='login' />
                     <Typography className='login'>
                       Login
                     </Typography>
                   </Button>
-                </Box>
-              </Link>
+                </Link>
+              </Box>
             </Grid>
           </Grid>
         </Toolbar>
