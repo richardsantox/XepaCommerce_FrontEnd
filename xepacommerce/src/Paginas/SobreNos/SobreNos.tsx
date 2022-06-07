@@ -26,7 +26,7 @@ function SobreNos() {
                 <Grid md={6}>
                     <h2>Missão</h2>
                     <Typography>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam blanditiis eum tenetur, voluptate perferendis optio molestias alias at! Quis cum assumenda repudiandae quo fugit alias eos magni officia ipsa.
+                    Fortalecimento econômico de pequenos e médios agricultores utilizando a tecnologia para conectar o campo com os centros urbanos e pessoas em situação de vulnerabilidade.
                     </Typography>
                 </Grid>
             </Box>
