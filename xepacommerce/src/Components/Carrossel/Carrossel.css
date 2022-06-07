@@ -28,11 +28,42 @@
     background: aqua;
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
 
 article img {
     width: 300px;
     height: 250px;
     margin-left: 3px;
+    animation: fade, bounce infinite alternate;
+    animation-duration: 4s;
 }
 
 .btd {
