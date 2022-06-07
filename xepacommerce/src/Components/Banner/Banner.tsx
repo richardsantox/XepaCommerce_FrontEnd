@@ -10,7 +10,7 @@ function Banner() {
                 <Container>
                     <Box className='card'>
 
-                        <Typography className='cardNome'>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cumque autem repellat quisquam nesciunt amet optio?</Typography>
+                        <Typography className='cardNome'>&nbsp;&nbsp;&nbsp;Xepa Commerce, levando até você, o melhor da agricultura local! Saiba quem somos e o que nos inspira.</Typography>
 
                             <Link className='link'>
                                 <Button className='btn-banner'>Saiba Mais</Button>
