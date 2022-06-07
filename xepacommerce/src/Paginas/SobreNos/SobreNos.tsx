@@ -51,7 +51,7 @@ function SobreNos() {
                 <Grid md={6}>
                     <h2>Valores</h2>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eveniet at nulla culpa tenetur fugiat itaque temporibus ipsum atque, odio libero amet aliquam. Velit reprehenderit a error sunt aperiam excepturi.
+                    Proporcionar acessibilidade a produtos de qualidade e saúde. Com isso, geramos fortalecimento econômico de pequenos comerciantes e estimulamos uma produção consciente dos alimentos.
                     </Typography>
                 </Grid>
                 
