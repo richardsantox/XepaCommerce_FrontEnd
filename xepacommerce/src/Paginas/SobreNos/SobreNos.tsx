@@ -35,7 +35,7 @@ function SobreNos() {
                 <Grid md={6}>
                     <h2>Visão</h2>
                     <Typography>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem beatae excepturi in odit architecto delectus eaque voluptatum eius quas animi unde recusandae officiis mollitia, quo, nesciunt aliquid similique exercitationem culpa!
+                    Visando a redução do desperdício de produtos perecíveis, com ciclos de consumo reduzidos, de modo a cooperar com as metas de desenvolvimento sustentáveis.
                     </Typography>
                 </Grid>
                 <Grid md={6}>
