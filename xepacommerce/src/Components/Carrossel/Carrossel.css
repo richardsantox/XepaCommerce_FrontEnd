@@ -1,3 +1,9 @@
+@media(min-width: 1620px){
+    #carousel{
+    justify-content: center;
+    }
+}
+
 #carousel {
     display: flex;
     flex-direction: row;
