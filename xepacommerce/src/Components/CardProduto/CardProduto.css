@@ -1,0 +1,27 @@
+.cardbtns{
+    padding: 0 20px 0 20px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.btnComprar {
+    background-color: #002878;
+    background-image: linear-gradient(45deg, #23D39B 0%, #fcb900 55%, #f04e0e 90%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: white !important;
+    border-radius: 50px !important;
+    padding: 12px 48px;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    box-shadow: 5px 5px 18px rgba(0, 40, 120, 0.397);
+    transition: all 0.5s ease !important;
+}
+
+
+.btnComprar:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0) !important;
+    background-position: 0 0 !important;
+}

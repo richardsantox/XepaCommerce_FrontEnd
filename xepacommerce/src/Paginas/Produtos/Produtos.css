@@ -1,0 +1,11 @@
+.prdStyle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tituloProduto {
+    text-align: center;
+    margin-top: 20px !important;
+    font-weight: bold !important;
+}
