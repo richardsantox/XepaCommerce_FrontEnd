@@ -48,3 +48,9 @@ article img {
     position: absolute;
     height: 40px;
 }
+
+.imgCarrossel {
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+}

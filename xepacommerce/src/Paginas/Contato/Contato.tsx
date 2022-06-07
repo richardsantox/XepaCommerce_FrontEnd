@@ -16,7 +16,7 @@ function Contato() {
                             <TextField label="Nome" variant="outlined" fullWidth className='caixa' />
                             <TextField label="Email" variant="outlined" fullWidth className='caixa' />
                             <TextField label="Assunto" variant="outlined" fullWidth className='caixa' />
-                            <TextField label="Menssagem" className='caixa'
+                            <TextField label="Mensagem" className='caixa'
                                 fullWidth
                                 multiline
                                 rows={4}

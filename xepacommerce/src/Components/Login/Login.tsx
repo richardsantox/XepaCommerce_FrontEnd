@@ -54,7 +54,7 @@ function Login() {
     return (
         <>
             <Grid container direction='row' justifyContent='center' alignItems='center'>
-                <Grid item xs={3}></Grid>
+                <Grid item xs={3}  className='morangos'></Grid>
                 <Grid item xs={6} alignItems='center'>
                     <Box paddingX={10}>
                         <form onSubmit={onSubmit}>
@@ -88,7 +88,7 @@ function Login() {
                         </form>
                     </Box>
                 </Grid>
-                <Grid item xs={3}></Grid>
+                <Grid item xs={3} className='laranjas'></Grid>
             </Grid>
         </>
     );
