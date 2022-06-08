@@ -6,6 +6,8 @@ import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Cont
 import Batata from '../../assets/img/batata.png';
 import { Box, Grid } from '@mui/material'
 import './Home.css'
+import { Link } from 'react-router-dom'
+
 
 const useStyles = makeStyles({
     root: {
@@ -20,20 +22,6 @@ const useStyles = makeStyles({
         paddingTop: '10px',
         margin: 'auto',
     },
-
-    tituloproduto: {
-        textAlign: 'center',
-        marginTop: '60px' ,
-        color: 'rgb(63, 62, 62)',
-        fontWeight: 450 ,
-    },
-
-    cards: {
-        display: 'flex',
-        justifyContent:'center',
-        marginTop: '20px',
-        marginBottom: '100px' ,
-    }
 });
 
 
@@ -46,8 +34,8 @@ function Home() {
             <Carrossel />
 
             <Container>
-                <h2 className={classes.tituloproduto}> Promoções do Dia </h2>
-                <Box className={classes.cards}>
+                <h2 className='tituloproduto'> Promoções do Dia </h2>
+                <Box className='cards'>
                     <Card className={classes.root}>
                         <CardActionArea>
                             <CardMedia
@@ -134,16 +122,25 @@ function Home() {
                     </Card>
                 </Box>
 
+                <Box className='box-mais'>
+                    <Link to='/produtos' className='link'>
+                        <Button className='btn-mais'>
+                            Veja mais
+                        </Button>
+                    </Link>
+                </Box>
+
+
             </Container>
 
             <Box className='box-apoio'>
                 <Container>
                     <Box>
-                        <Grid container>
+                        <Grid className='grid-textos' container>
                             <Grid md={6}>
                                 <h2>Apoie o comercio local !!</h2>
                                 <Typography>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere exercitationem fuga provident dignissimos porro! Eos deserunt et animi blanditiis aliquid natus enim veritatis id quod. Nemo ipsum repellendus nisi id.
+                                Faça parte dessa inciativa de fortalecimento do comércio local e promoção de aceso à produtos de qualidade e entre na para o time de pessoas comprometidas com um mundo mais sustentável.
                                 </Typography>
                             </Grid>
 
