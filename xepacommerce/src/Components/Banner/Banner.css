@@ -21,6 +21,10 @@
 
 .cardNome{
     padding: 40px;
+    font-weight: 450 !important; 
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(63, 62, 62);
 }
 
 .link{
