@@ -18,12 +18,6 @@ import { busca } from '../../Services/Service';
 import useLocalStorage from 'react-use-localstorage';
 
 const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-        margin: 10,
-        boxShadow: '1px 1px 10px 0px rgba(0,0,0,0.75)',
-    },
-
     img: {
         width: '50%',
         height: '50%',
@@ -54,7 +48,7 @@ export default function Produtos() {
             {
                 produtos.map(produto => (
 
-                    <Card className={classes.root}>
+                    <Card className='root'>
                         <CardActionArea>
                             <CardMedia
                                 component="img"

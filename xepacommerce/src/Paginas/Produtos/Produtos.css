@@ -2,11 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    transition: transform 1s;
-}
-
-.prdStyle:hover {
-    transform: scale(1.05, 1.05);
 }
 
 .tituloProduto {

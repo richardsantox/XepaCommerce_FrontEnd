@@ -1,8 +1,31 @@
-.cardbtns{
+@keyframes fade2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.cardbtns {
     padding: 0 20px 0 20px !important;
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
+}
+
+.root {
+    max-width: 345px;
+    margin: 10px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+    transition: transform 1s !important;
+    animation: fade 1s;
+}
+
+.root:hover{
+ transform: scale(1.05,1.05);
+ transition: transform 1s;
 }
 
 .btnComprar {
