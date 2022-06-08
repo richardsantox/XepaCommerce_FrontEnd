@@ -1,6 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
-import { makeStyles, Drawer, Button, List, Divider, ListItem, ListItemIcon, ListItemText, Badge, IconButton, Typography } from '@material-ui/core';
+import { Drawer, Button, List, Divider, ListItem, ListItemIcon, ListItemText, Badge, IconButton, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
@@ -20,13 +19,6 @@ export default function CarrinhoLateral() {
     const toggleDrawer = (anchor: Anchor, open: boolean) => (
         event: React.KeyboardEvent | React.MouseEvent,
     ) => {
-        if (
-            event.type === 'keydown' &&
-            ((event as React.KeyboardEvent).key === 'Tab' ||
-                (event as React.KeyboardEvent).key === 'Shift')
-        ) {
-            return;
-        }
         setState({ ...state, [anchor]: open });
     };
 
