@@ -32,7 +32,7 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent:'center',
         marginTop: '20px',
-        marginBottom: '60px' ,
+        marginBottom: '100px' ,
     }
 });
 

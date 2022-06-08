@@ -37,8 +37,7 @@
 
 .Btx {
     margin-top: 30px !important;
-    background-color: #002878;
-    background-image: linear-gradient(45deg, #23D39B 0%, #fcb900 55%, #f04e0e 90%);
+    background-image: linear-gradient(45deg, #23D39B 0%, #fcb900 60%, #f04e0e 90%);
     background-position: 100% 0;
     background-size: 200% 200%;
     color: white !important;
@@ -47,7 +46,7 @@
     font-size: 16px;
     font-weight: 200;
     text-decoration: none;
-    box-shadow: 5px 5px 18px rgba(0, 40, 120, 0.397);
+    box-shadow: 3px 3px 13px rgba(0, 40, 120, 0.397);
     transition: all 0.5s ease !important;
 }
 

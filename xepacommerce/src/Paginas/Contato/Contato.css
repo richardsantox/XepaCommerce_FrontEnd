@@ -1,8 +1,9 @@
 .container{
     background-color: #da8484;
 }
+
 .titulo{
-    font-weight: 450 !important;
+    font-weight: 450 !important; 
     text-align: center;
     margin-top: 30px;
     color: rgb(63, 62, 62);
