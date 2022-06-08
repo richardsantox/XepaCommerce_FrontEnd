@@ -69,7 +69,7 @@ article img {
     height: 250px;
     margin-left: 3px;
     animation: fade, bounce infinite alternate;
-    -webkit-animation: bounce infinite alternate;
+    -webkit-animation: fade, bounce infinite alternate;
     animation-duration: 4s;
 }
 
