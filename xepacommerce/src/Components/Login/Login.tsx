@@ -6,10 +6,13 @@ import useLocalStorage from 'react-use-localstorage';
 import Autenticacao from '../../Modelos/AutenticacaoDTO';
 import { login } from '../../Services/Service';
 import './Login.css';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../Store/Tokens/Actions';
 
 function Login() {
 
     let navigate = useNavigate();
+
     const [token, setToken] = useLocalStorage('token');
     const [autenticacao, setAutenticacao] = useState<Autenticacao>(
         {
