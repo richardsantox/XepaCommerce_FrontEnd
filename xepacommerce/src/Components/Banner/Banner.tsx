@@ -13,7 +13,7 @@ function Banner() {
 
                         <Typography className='cardNome'>&nbsp;&nbsp;&nbsp;Xepa Commerce, levando até você, o melhor da agricultura local! Saiba quem somos e o que nos inspira.</Typography>
 
-                            <Link to='sobrenos' className='link'>
+                            <Link to='/sobrenos' className='link'>
                                 <Button className='btn-banner'>Saiba Mais</Button>
                             </Link>
 
