@@ -24,6 +24,9 @@ function Carrossel() {
                 <article><img src={cenoura} alt="cenoura po" className='imgCarrossel' /></article>
                 <article><img src={limao} alt="limão po" className='imgCarrossel' /></article>
                 <article><img src={rucula} alt="rúcula po" className='imgCarrossel' /></article>
+                <div className='an1'>
+                    <p>DESTAQUES</p>
+                </div>
             </section>
         </>
     );

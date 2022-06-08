@@ -1,6 +1,6 @@
-@media(min-width: 1620px){
-    #carousel{
-    justify-content: center;
+@media(min-width: 1620px) {
+    #carousel {
+        justify-content: center;
     }
 }
 
@@ -46,21 +46,21 @@
 
 @keyframes bounce {
     from {
-        transform: translateY(0px);
+        transform: translateY(20px);
     }
 
     to {
-        transform: translateY(-10px);
+        transform: translateY(5px);
     }
 }
 
 @-webkit-keyframes bounce {
     from {
-        transform: translateY(-10px);
+        transform: translateY(5px);
     }
 
     to {
-        transform: translateY(0px);
+        transform: translateY(20px);
     }
 }
 
@@ -69,7 +69,45 @@ article img {
     height: 250px;
     margin-left: 3px;
     animation: fade, bounce infinite alternate;
+    -webkit-animation: bounce infinite alternate;
     animation-duration: 4s;
+}
+
+.an1 {
+    display: flex;
+    position: absolute;
+}
+
+.an1 p {
+    background-color: rgba(128, 128, 128, 0.397);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(72, 72, 223, 0.797);
+    width: 75px;
+    height: 20px;
+    animation: go-back 2s;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes go-back {
+
+    0%,
+    100%,
+    from {
+        transform: translateX(1000px);
+    }
+
+    50% {
+        box-shadow:
+            -10px 0 0 #999,
+            -20px 0 0 #777,
+            -30px 0 0 #666,
+            -40px 0 0 #555,
+            -50px 0 0 #444;
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 .imgCarrossel {
