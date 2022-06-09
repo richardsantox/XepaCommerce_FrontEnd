@@ -17,17 +17,7 @@ import { useSelector } from 'react-redux';
 import { busca } from '../../Services/Service';
 import useLocalStorage from 'react-use-localstorage';
 
-const useStyles = makeStyles({
-    img: {
-        width: '50%',
-        height: '50%',
-        paddingTop: '10px',
-        margin: 'auto',
-    }
-});
-
 export default function Produtos() {
-    const classes = useStyles();
 
     const [produtos, setProdutos] = useState<Produto[]>([]);
     let navigate = useNavigate();
@@ -46,38 +36,40 @@ export default function Produtos() {
     return (
         <>
             {
-                produtos.map(produto => (
+                produtos.map(produto => {
+                    return (
 
-                    <Card className='root'>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                alt={produto.nomeProduto}
-                                image={produto.foto} className={classes.img}
-                                title={produto.nomeProduto}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    {produto.nomeProduto}
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    {produto.descricao}
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    Quantidade disponível: {produto.estoque}
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions className='cardbtns'>
-                            <h4>
-                               R$ {produto.preco}
-                            </h4>
-                            <Button className='btnComprar'>
-                                Comprar
-                            </Button>
-                        </CardActions>
-                    </Card>
-                ))
+                        <Card className='root'>
+                            <CardActionArea>
+                                <CardMedia
+                                    className='imgCard'
+                                    component="img"
+                                    alt={produto.nomeProduto}
+                                    image={produto.foto}
+                                    title={produto.nomeProduto} />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" color="textPrimary" component="h4">
+                                        {produto.nomeProduto}
+                                    </Typography>
+                                    <Typography variant="body2" color="textPrimary" component="p">
+                                        {produto.descricao}
+                                    </Typography>
+                                    <Typography variant="body2" color="textPrimary" component="p">
+                                        Quantidade disponível: {produto.estoque}
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions className='cardbtns'>
+                                <h3>
+                                    R$ {produto.preco}
+                                </h3>
+                                <Button className='btnComprar'>
+                                    Comprar
+                                </Button>
+                            </CardActions>
+                        </Card>
+                    );
+                })
             }
         </>
     );

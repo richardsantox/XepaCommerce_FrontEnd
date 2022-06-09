@@ -8,26 +8,7 @@ import { Box, Grid } from '@mui/material'
 import './Home.css'
 import { Link } from 'react-router-dom'
 
-
-const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-        margin: 10,
-        boxShadow: '1px 1px 10px 0px rgba(0,0,0,0.75)',
-    },
-
-    img: {
-        width: '50%',
-        height: '50%',
-        paddingTop: '10px',
-        margin: 'auto',
-    },
-});
-
-
 function Home() {
-    const classes = useStyles();
-
     return (
         <>
             <Banner />
@@ -36,27 +17,28 @@ function Home() {
             <Container>
                 <h2 className='tituloproduto'> Promoções do Dia </h2>
                 <Box className='cards'>
-                    <Card className={classes.root}>
+                    <Card className='rootHome'>
                         <CardActionArea>
                             <CardMedia
+                                className='imgCardHome'
                                 component="img"
                                 alt="Batata"
-                                image={Batata} className={classes.img}
+                                image={Batata}
                                 title="Produto Batata orgânica"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Batata
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
+                                <Typography variant="body2" color="textPrimary" component="p">
                                     Batatas inglesas produzidas por agricultores locais.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions className='cardbtns'>
-                            <h4>
+                            <h3>
                                 R$ 3,99
-                            </h4>
+                            </h3>
                             <Button className='btnComprar'>
                                 Comprar
                             </Button>
@@ -65,27 +47,28 @@ function Home() {
 
 
 
-                    <Card className={classes.root}>
+                    <Card className='rootHome'>
                         <CardActionArea>
                             <CardMedia
+                                className='imgCardHome'
                                 component="img"
                                 alt="Batata"
-                                image={Batata} className={classes.img}
+                                image={Batata}
                                 title="Produto Batata orgânica"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Batata
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
+                                <Typography variant="body2" color="textPrimary" component="p">
                                     Batatas inglesas produzidas por agricultores locais.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions className='cardbtns'>
-                            <h4>
+                            <h3>
                                 R$ 3,99
-                            </h4>
+                            </h3>
                             <Button className='btnComprar'>
                                 Comprar
                             </Button>
@@ -94,27 +77,28 @@ function Home() {
 
 
 
-                    <Card className={classes.root}>
+                    <Card className='rootHome'>
                         <CardActionArea>
                             <CardMedia
+                                className='imgCardHome'
                                 component="img"
                                 alt="Batata"
-                                image={Batata} className={classes.img}
+                                image={Batata}
                                 title="Produto Batata orgânica"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Batata
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
+                                <Typography variant="body2" color="textPrimary" component="p">
                                     Batatas inglesas produzidas por agricultores locais.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions className='cardbtns'>
-                            <h4>
+                            <h3>
                                 R$ 3,99
-                            </h4>
+                            </h3>
                             <Button className='btnComprar'>
                                 Comprar
                             </Button>

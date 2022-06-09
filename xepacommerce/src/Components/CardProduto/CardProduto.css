@@ -18,7 +18,7 @@
 .root {
     max-width: 345px;
     margin: 10px;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75) !important;
     transition: transform 1s !important;
     animation: fade 1s;
 }
@@ -47,4 +47,11 @@
 .btnComprar:hover {
     box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0) !important;
     background-position: 0 0 !important;
+}
+
+.imgCard {
+    width: 50% !important;
+    height: 50% !important;
+    padding-top: 10px !important;
+    margin: auto !important;
 }
