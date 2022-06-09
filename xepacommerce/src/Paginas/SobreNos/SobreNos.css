@@ -2,8 +2,10 @@
     font-weight: 450; 
     text-align: justify;
     margin-top: 30px;
-    color: rgb(63, 62, 62);
+    color: rgb (100 80 80);
 }
-.tituloSobreNos{
+.titulos{
     text-align: center;
+    text-shadow: 2px 2px 8px gray,
+                         -2px -2px 8px greenyellow;
 }
