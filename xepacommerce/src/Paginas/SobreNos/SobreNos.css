@@ -17,19 +17,18 @@
     font-weight: 450; 
     text-align: justify;
     margin-top: 30px;
-<<<<<<< HEAD
     color: rgb(63, 62, 62);
     
 }
 
 .primeira-img{
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 345px;
+    max-height: 345px;
 }
 
 .imgs-sobre{
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 345px;
+    max-height: 345px;
 }
 
 @media (max-width: 768px){
@@ -44,16 +43,9 @@
     }
 }
     
-.tituloSobreNos{
-    text-align: center;
-    color: black;
-}
-=======
-    color: rgb (100 80 80);
-}
+
 .titulos{
     text-align: center;
     text-shadow: 2px 2px 8px gray,
                          -2px -2px 8px greenyellow;
 }
->>>>>>> aa99d3e61dc76470f508668502dcd987044f0402
