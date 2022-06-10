@@ -1,12 +1,78 @@
+.titulo-equipe{
+    margin: 50px 0 !important;
+}
 
 .box-equipe {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-equipe{
+    max-width: 350px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75) !important;
+    background-color: #23d39b1e !important;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.card-icones{
+    display: flex;
     justify-content: center;
 }
 
-.redes{
-    color: black !important;
+
+
+
+.redes-equipe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+    max-height: 350px;
+}
+.redes-equipe:hover{
+    opacity: 1;
+    background-color: #1d856456;
+    max-height: 350px;
+    transition: 1s;
 }
 
+
+
+.icone-redes{
+    color: #fff;
+    font-size: 6vh !important;
+    margin: 0 15px;
+    padding: 5px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff934b 0%,#ff5e62 100%) !important;
+}
+.icone-redes:hover{
+    color: rgb(34, 34, 34);
+    transition: 0.3s;
+}
+
+
+
+.nome-equipe{
+    color: #23d39b;
+    font-weight: 600 !important;
+}
+
+@media (max-width: 768px) {
+    
+    .card-equipe{
+        max-width: 50% !important;
+    }
+
+    .nome-equipe{
+        color: #23d39b;
+        font-size: 3vw !important;
+    }
+}
 
