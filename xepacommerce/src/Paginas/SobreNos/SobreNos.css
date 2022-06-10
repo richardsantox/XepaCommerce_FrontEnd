@@ -17,6 +17,7 @@
     font-weight: 450; 
     text-align: justify;
     margin-top: 30px;
+<<<<<<< HEAD
     color: rgb(63, 62, 62);
     
 }
@@ -47,3 +48,12 @@
     text-align: center;
     color: black;
 }
+=======
+    color: rgb (100 80 80);
+}
+.titulos{
+    text-align: center;
+    text-shadow: 2px 2px 8px gray,
+                         -2px -2px 8px greenyellow;
+}
+>>>>>>> aa99d3e61dc76470f508668502dcd987044f0402

@@ -46,21 +46,21 @@
 
 @keyframes bounce {
     from {
-        transform: translateY(20px);
+        transform: translateY(25px);
     }
 
     to {
-        transform: translateY(5px);
+        transform: translateY(15px);
     }
 }
 
 @-webkit-keyframes bounce {
     from {
-        transform: translateY(5px);
+        transform: translateY(15px);
     }
 
     to {
-        transform: translateY(20px);
+        transform: translateY(25px);
     }
 }
 
@@ -68,7 +68,7 @@ article img {
     width: 300px;
     height: 250px;
     margin-left: 3px;
-    animation: fade, bounce infinite alternate;
+    animation: fade, bounce, infinite alternate;
     -webkit-animation: fade, bounce infinite alternate;
     animation-duration: 4s;
 }
@@ -83,31 +83,29 @@ article img {
 .an1 p {
     background-color: rgba(234, 231, 231, 0.552);
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    color: #2b2b2b;
+    ---neon: #22afc8;
     border-radius: 5px;
     text-align: center;
     padding: 6px;
     width: 100px;
     height: 18px;
-    animation: go-back 2s;
+    animation: go-back 2s, neon 2s alternate infinite;
     transition: transform 2s;
 }
 
-@keyframes go-back {
-
-    0%,
-    100%,
+@keyframes neon {
     from {
-        transform: translateX(1000px);
+        filter: drop-shadow(0 0 0 var(---neon));
     }
 
-    50% {
-        box-shadow:
-            -10px 0 0 #999,
-            -20px 0 0 #777,
-            -30px 0 0 #666,
-            -40px 0 0 #555,
-            -50px 0 0 #444;
+    to {
+        filter: drop-shadow(0 0 30px var(---neon));
+    }
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(2000px);
     }
 
     to {

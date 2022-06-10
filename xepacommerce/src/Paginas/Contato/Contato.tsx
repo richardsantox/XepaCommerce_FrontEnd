@@ -28,8 +28,8 @@ function Contato() {
                         </form>
                     </Grid>
                     <Grid md={6}>
-                        <Box paddingLeft={8}>
-                            <img src="https://i.imgur.com/fWAnFfN.gif" alt="" />
+                        <Box>
+                            <img className='img-contato' src="https://i.imgur.com/I7B4Jqg.jpg" alt="" />
                         </Box>
                     </Grid>
                 </Grid>
