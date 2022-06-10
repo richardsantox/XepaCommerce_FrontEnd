@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Paginas/Home/Home';
 import Footer from './Components/Footer/Footer';
 import Logar from './Paginas/Login/Login';
+import Pedido from './Paginas/Pedido/Pedido';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
           <Route path="/logar" element={<Logar />} />
+          <Route path="/pedido" element={<Pedido />} />
         </Routes>
       </div>
       <Footer />
