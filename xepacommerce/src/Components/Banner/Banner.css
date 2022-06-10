@@ -1,4 +1,5 @@
-.imgBanner{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
+.imgBanner {
     background-image: url(../../assets/img/banner.jpg);
     background-repeat: no-repeat;
     width: 100%;
@@ -8,39 +9,41 @@
     margin-top: 3px !important;
 }
 
-.card{
+.card {
     background: rgba(255, 255, 255, 0.329);
-    width: 60vh;
+    max-width: 60vh;
     height: 300px;
     margin: 0 15px;
-    display: flex ;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.cardNome{
+.cardNome {
     padding: 40px;
-    font-weight: 450 !important; 
+    font-weight: bold !important;
     text-align: center;
     margin-top: 30px;
     color: rgb(63, 62, 62);
+    font-family: 'Poppins', sans-serif !important;
+    text-shadow: 1px 0 1px #2b2b2b69 ;
 }
 
-.link{
+.link {
     text-decoration: none !important;
 }
 
-.btn-banner{
-    color:#363636 !important ;
+.btn-banner {
+    color: #363636 !important;
     background-color: rgba(255, 255, 255, 0.26) !important;
-    border-radius: 50px !important ;
-    border:  1px solid olivedrab !important ;
+    border-radius: 50px !important;
+    border: 1px solid olivedrab !important;
     font-size: 13px !important;
     transition: all .3s ease-in-out !important;
 }
 
-.btn-banner:hover{
+.btn-banner:hover {
     background-color: rgba(255, 255, 255, 0.500) !important;
     font-weight: 600 !important;
 }

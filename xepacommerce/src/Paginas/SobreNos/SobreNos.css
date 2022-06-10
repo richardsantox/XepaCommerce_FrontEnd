@@ -1,9 +1,49 @@
+.container-sobre{
+    text-align: center;
+}
+
+.box-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.linha{
+    margin: 15px;
+}
+
 .sobreNos{
     font-weight: 450; 
     text-align: justify;
     margin-top: 30px;
-    color: rgb (100 80 80);
+    color: rgb(63, 62, 62);
+    
 }
+
+.primeira-img{
+    max-width: 345px;
+    max-height: 345px;
+}
+
+.imgs-sobre{
+    max-width: 345px;
+    max-height: 345px;
+}
+
+@media (max-width: 768px){
+   
+    .imgs-sobre{
+        display: none;
+    }
+    .box-sobre{
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+    
+
 .titulos{
     text-align: center;
     text-shadow: 2px 2px 8px gray,

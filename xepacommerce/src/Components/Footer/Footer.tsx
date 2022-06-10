@@ -13,7 +13,7 @@ function Footer() {
 
             <div className='linha'></div>
 
-            <Grid container>
+            <Grid container className='container-footer'>
                 <Grid xs={4}>
                     <Box display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
                         <img className='imgxepa' src={logoxepa} alt='logoxepa' />

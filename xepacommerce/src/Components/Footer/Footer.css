@@ -1,5 +1,4 @@
 .linha {
-    width: 100%;
     border-bottom: 1px solid hsla(34, 9%, 66%, 0.493);
 }
 
@@ -23,6 +22,7 @@
 .Metodospagamento {
     margin-top: 30px;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 .titulo2 {
@@ -54,4 +54,9 @@
 .Btx:hover {
     box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0) !important;
     background-position: 0 0 !important;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
 }

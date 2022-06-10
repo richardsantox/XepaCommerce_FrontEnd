@@ -1,0 +1,12 @@
+
+.box-equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.redes{
+    color: black !important;
+}
+
+
