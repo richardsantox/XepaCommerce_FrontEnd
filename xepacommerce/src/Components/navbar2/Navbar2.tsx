@@ -77,6 +77,8 @@ export default function Navbar2() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState<null | HTMLElement>(null);
 
+  const number = [9,2,3];
+
   const isMenuOpen = Boolean(anchorEl);
 
 
@@ -143,7 +145,7 @@ export default function Navbar2() {
 
             <Box>
               <div className={classes.sectionDesktop}>
-                <CarrinhoLateral />
+                <CarrinhoLateral/>
               </div>
             </Box>
 

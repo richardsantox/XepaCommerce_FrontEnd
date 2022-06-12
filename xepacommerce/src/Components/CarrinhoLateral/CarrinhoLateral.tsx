@@ -12,6 +12,8 @@ type Anchor = 'right';
 
 export default function CarrinhoLateral() {
     
+
+
     const [state, setState] = React.useState({
         right: false,
     });
@@ -21,14 +23,14 @@ export default function CarrinhoLateral() {
     ) => {
         setState({ ...state, [anchor]: open });
     };
-
-
+    
     /* Conteudo do carrinho Altera Aqui */
     /* Conteudo do carrinho Altera Aqui */
     const list = (anchor: Anchor) => (
         <div>
+            
             <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                {['Inbox', 'Starred', 'Send email', 'Drafts',].map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />

@@ -9,12 +9,14 @@ import batata from '../../assets/img/batata.png'
 import cenoura from '../../assets/img/cenoura.png'
 import limao from '../../assets/img/limao.png'
 import rucula from '../../assets/img/rucula.png'
+import { Link } from 'react-router-dom';
 
 function Carrossel() {
 
     return (
         <>
             <section id='carousel'>
+                <Link to='/produtos' className='linkC'>
                 <article><img src={banana} alt="banana po" className='imgCarrossel' /></article>
                 <article><img src={tomate} alt="tomate po" className='imgCarrossel' /></article>
                 <article><img src={maca} alt="maçã po" className='imgCarrossel' /></article>
@@ -24,6 +26,7 @@ function Carrossel() {
                 <article><img src={cenoura} alt="cenoura po" className='imgCarrossel' /></article>
                 <article><img src={limao} alt="limão po" className='imgCarrossel' /></article>
                 <article><img src={rucula} alt="rúcula po" className='imgCarrossel' /></article>
+                </Link>
                 <div className='an1'>
                     <p>DESTAQUES</p>
                 </div>

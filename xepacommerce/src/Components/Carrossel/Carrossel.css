@@ -64,13 +64,22 @@
     }
 }
 
+.linkC{
+    display: flex;
+    flex-direction: row;
+}
+
 article img {
     width: 300px;
     height: 250px;
+    display: flex;
     margin-left: 3px;
     animation: fade, bounce, infinite alternate;
     -webkit-animation: fade, bounce infinite alternate;
     animation-duration: 4s;
+    cursor: pointer;
+    filter: saturate(105%);
+    filter: drop-shadow(1px 1px 1px black);
 }
 
 .an1 {
