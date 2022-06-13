@@ -1,14 +1,29 @@
 
 import { Button, Grid, TextField } from '@material-ui/core';
 import { Box, Container } from '@mui/material';
+import { toast } from 'react-toastify';
 import "./Contato.css";
 
 function Contato() {
+    function handleClick() {
+        toast.info('Mensagem enviada com sucesso!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            type: "success",
+            theme: "colored",
+    })};
+
     return (
         <>
             <Container >
-                <h1 className='titulo'>Entre em contato</h1>
-                <hr className='linha'/>
+                <h1 className='titulo'>Olá, como podemos ajudar você?</h1>
+                <h2 className='subtitulo'>Você tem alguma pergunta ou está interessado em disponibilizar os seus produtos? Preencha o formulário e entre em contato conosco:</h2>
+                <hr className='linha' />
 
                 <Grid container alignItems='center'>
                     <Grid md={6}>
@@ -22,7 +37,7 @@ function Contato() {
                                 rows={4}
                                 variant="outlined"
                             />
-                            <Button type='submit' variant='contained' className='btnEnviar' fullWidth>
+                            <Button onClick={handleClick} variant='contained' className='btnEnviar' fullWidth>
                                 Enviar
                             </Button>
                         </form>

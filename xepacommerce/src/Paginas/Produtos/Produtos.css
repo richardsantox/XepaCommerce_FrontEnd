@@ -4,8 +4,9 @@
     justify-content: center;
 }
 
-.tituloProduto {
+.tituloPrd{
+    font-weight: 450 !important; 
     text-align: center;
-    margin-top: 20px !important;
-    font-weight: bold !important;
+    margin-top: 30px;
+    color: rgb(63, 62, 62);
 }
