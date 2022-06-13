@@ -79,7 +79,7 @@ function Equipe() {
                                 className=''
                                 component="img"
                                 alt="Thamires"
-                                image="https://i.imgur.com/0DtkF13.jpg"
+                                image="https://i.imgur.com/9aoWIvB.jpg"
                                 title="Imagens dos integrantes do time do Xepa"
                             />
                             <CardActions className="card-icones">
@@ -198,8 +198,8 @@ function Equipe() {
                             <CardMedia
                                 className=''
                                 component="img"
-                                alt="Richard"
-                                image="https://i.imgur.com/Mbbeg6Q.jpg"
+                                alt="vinicius"
+                                image="https://i.imgur.com/eKOeJpy.jpg"
                                 title="Imagens dos integrantes do time do Xepa"
                             />
                             <CardActions className="card-icones">

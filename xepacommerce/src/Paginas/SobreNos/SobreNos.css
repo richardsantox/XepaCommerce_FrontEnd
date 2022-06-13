@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+
 }
 
 .linha {
@@ -17,8 +18,7 @@
     font-weight: 450;
     text-align: justify;
     margin-top: 30px;
-    color: rgb(63, 62, 62);
-
+    color: rgb(41, 40, 40);
 }
 
 .primeira-img {
