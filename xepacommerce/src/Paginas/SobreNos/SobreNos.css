@@ -1,51 +1,66 @@
-.container-sobre{
+.container-sobre {
     text-align: center;
 }
 
-.box-sobre{
+.box-sobre {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
 
-.linha{
+.linha {
     margin: 15px;
 }
 
-.sobreNos{
-    font-weight: 450; 
+.sobreNos {
+    font-weight: 450;
     text-align: justify;
     margin-top: 30px;
     color: rgb(63, 62, 62);
-    
+
 }
 
-.primeira-img{
+.primeira-img {
     max-width: 345px;
     max-height: 345px;
+    animation: fade;
+    animation-duration: 2s;
 }
 
-.imgs-sobre{
+.imgs-sobre {
     max-width: 345px;
     max-height: 345px;
+    animation: fade;
+    animation-duration: 2s;
 }
 
-@media (max-width: 768px){
-   
-    .imgs-sobre{
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .imgs-sobre {
         display: none;
     }
-    .box-sobre{
+
+    .box-sobre {
         flex-wrap: wrap;
         margin-left: 20px;
         margin-right: 20px;
     }
 }
-    
 
-.titulos{
+
+.titulos {
     text-align: center;
     text-shadow: 2px 2px 8px gray,
-                         -2px -2px 8px greenyellow;
+        -2px -2px 8px greenyellow;
 }

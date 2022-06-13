@@ -8,6 +8,7 @@ import { login } from '../../Services/Service';
 import './Login.css';
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../Store/Tokens/Actions';
+import { toast } from 'react-toastify';
 
 function Login() {
 
@@ -37,11 +38,31 @@ function Login() {
         try {
 
             await login(`/api/Autenticacao`, autenticacao, setToken);
-            alert('Usuário logado com sucesso!');
+            toast.info('Login realizado com sucesso!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                progress: undefined,
+                type: "success",
+                theme: "colored"
+            });
 
         } catch (error) {
 
-            alert('Dados do usuário inconsistentes. Erro ao logar!');
+            toast.info('Dados Inconsistentes', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                progress: undefined,
+                type: "warning",
+                theme: "colored"
+            });
 
         }
     }
@@ -57,7 +78,7 @@ function Login() {
     return (
         <>
             <Grid container direction='row' justifyContent='center' alignItems='center'>
-                <Grid item xs={3}  className='morangos'></Grid>
+                <Grid item xs={3} className='morangos'></Grid>
                 <Grid item xs={6} alignItems='center'>
                     <Box paddingX={10}>
                         <form onSubmit={onSubmit}>

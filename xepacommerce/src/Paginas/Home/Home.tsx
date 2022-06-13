@@ -4,6 +4,8 @@ import Banner from '../../Components/Banner/Banner'
 import { makeStyles } from '@material-ui/core/styles'
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Typography, } from '@material-ui/core'
 import Batata from '../../assets/img/batata.png';
+import limao from '../../assets/img/limao.png';
+import cenoura from '../../assets/img/cenoura.png';
 import { Box, Grid } from '@mui/material'
 import './Home.css'
 import { Link } from 'react-router-dom'
@@ -31,7 +33,7 @@ function Home() {
                                     Batata
                                 </Typography>
                                 <Typography variant="body2" color="textPrimary" component="p">
-                                    Batatas inglesas produzidas por agricultores locais.
+                                    Batatas inglesas
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -53,15 +55,15 @@ function Home() {
                                 className='imgCardHome'
                                 component="img"
                                 alt="Batata"
-                                image={Batata}
+                                image={limao}
                                 title="Produto Batata orgânica"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    Batata
+                                    Limão
                                 </Typography>
                                 <Typography variant="body2" color="textPrimary" component="p">
-                                    Batatas inglesas produzidas por agricultores locais.
+                                   Limão de qualidade
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -83,21 +85,21 @@ function Home() {
                                 className='imgCardHome'
                                 component="img"
                                 alt="Batata"
-                                image={Batata}
+                                image={cenoura}
                                 title="Produto Batata orgânica"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    Batata
+                                    Cenoura
                                 </Typography>
                                 <Typography variant="body2" color="textPrimary" component="p">
-                                    Batatas inglesas produzidas por agricultores locais.
+                                    Cenoura laranja
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions className='cardbtns'>
                             <h3>
-                                R$ 3,99
+                                R$ 3,45
                             </h3>
                             <Button className='btnComprar'>
                                 Comprar

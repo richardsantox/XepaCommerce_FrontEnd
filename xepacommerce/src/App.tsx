@@ -8,10 +8,12 @@ import Home from './Paginas/Home/Home';
 import Footer from './Components/Footer/Footer';
 import Logar from './Paginas/Login/Login';
 import Pedido from './Paginas/Pedido/Pedido';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <Router>
+      <ToastContainer />
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
         <Routes> // Antigo Switch

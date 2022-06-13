@@ -5,6 +5,7 @@ import Usuario from "../../Modelos/UsuarioDTO";
 import { Grid, Typography, Button, TextField } from '@material-ui/core';
 import { Box } from "@mui/material";
 import './CadastroUsuario.css';
+import { toast } from "react-toastify";
 
 function CadastroUsuario() {
 
@@ -59,12 +60,42 @@ function CadastroUsuario() {
         if (confirmarSenha === usuario.senha) {
             try {
                 await cadastroUsuario(`/api/Usuarios`, usuario, setUsuarioResultado)
-                alert('Usuario Cadastrado com sucesso')
+                toast.info('Usuario cadastrado com sucesso!', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: false,
+                    progress: undefined,
+                    type: "success",
+                    theme: "colored"
+                });
             } catch (error) {
-                alert('Erro no formulário, tente novamente')
+                toast.info('Erro no formulario, tente novamente', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: false,
+                    progress: undefined,
+                    type: "error",
+                    theme: "colored"
+                });
             }
         } else {
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+            toast.info('Dados Inconsistentes, por favor verificar as informações', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                progress: undefined,
+                type: "warning",
+                theme: "colored"
+            });
         }
     }
 
