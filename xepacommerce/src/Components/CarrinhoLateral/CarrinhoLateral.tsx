@@ -1,9 +1,8 @@
 import React from 'react';
-import { Drawer, Button, List, Divider, ListItem, ListItemIcon, ListItemText, Badge, IconButton, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
+import { Drawer, Button, Divider,  Badge, IconButton, Typography } from '@material-ui/core';
 import { ProdutoCarrinho, useCart } from '../../Hooks/useCart';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import "./CarrinhoLateral.css";
 import logoxepa from '../../assets/img/NovoXepa.png';
@@ -50,45 +49,48 @@ export default function CarrinhoLateral() {
         <div>
             <Divider />
             {cart.map(product => (
-                <div key={product.id}>
+                <div key={product.id} className="container-carrinho">
                     <h3>{product?.nomeProduto}</h3>
                     <img src={product?.foto} alt={product?.nomeProduto} className='imgCart' />
                     <h4>{product.quantidade}x</h4>
 
-                    <div>
-                        <button
+                    <div >
+                        <Button
+                            className='botoes-carrinho'
                             type="button"
                             disabled={product.quantidade <= 1}
                             onClick={() => handleProductDecrement(product)}
                         >
-                            -
-                        </button>
+                            <RemoveCircleIcon />
+                        </Button>
                         <input
                             type="text"
                             readOnly
                             value={product.quantidade}
                         />
-                        <button
+                        <Button
+                            className='botoes-carrinho'
                             type="button"
                             data-testid="increment-product"
                             onClick={() => handleProductIncrement(product)}
                         >
-                            +
-                        </button>
+                            <AddCircleIcon />
+                        </Button>
                     </div>
-                    <button
+                    <Button
+                        className='botoes-carrinho'
                         type="button"
+                        variant="outlined"
+                        color="secondary"
                         onClick={() => handleRemoveProduct(product.id)}
                     >
-                        remover
-                    </button>
+                        Remover
+                    </Button>
+                    <hr />
                 </div>
             ))}
             <Divider />
 
-            <Box>
-                <img className='imgxepa' src={logoxepa} alt='logoxepa' />
-            </Box>
 
         </div>
     );
@@ -109,7 +111,7 @@ export default function CarrinhoLateral() {
                             </Badge>
                         </IconButton>
                     </Button>
-                    <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
+                    <Drawer className='tamanho-carrinho' anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                         {list(anchor)}
                     </Drawer>
                 </React.Fragment>
