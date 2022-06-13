@@ -10,24 +10,27 @@ import Logar from './Paginas/Login/Login';
 import Pedido from './Paginas/Pedido/Pedido';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { CartProvider } from './Hooks/useCart';
 function App() {
   return (
     <Router>
-      <ToastContainer />
-      <Navbar />
-      <div style={{ minHeight: '100vh' }}>
-        <Routes> // Antigo Switch
-          <Route path="/" element={<Home />} />
-          <Route path="/produtos" element={<Produtos />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/sobrenos" element={<SobreNos />} />
-          <Route path="/contato" element={<Contato />} />
-          <Route path="/cadastrousuario" element={<CadastroUsuario />} />
-          <Route path="/logar" element={<Logar />} />
-          <Route path="/pedido" element={<Pedido />} />
-        </Routes>
-      </div>
-      <Footer />
+      <CartProvider>
+        <ToastContainer />
+        <Navbar />
+        <div style={{ minHeight: '100vh' }}>
+          <Routes> // Antigo Switch
+            <Route path="/" element={<Home />} />
+            <Route path="/produtos" element={<Produtos />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/sobrenos" element={<SobreNos />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+            <Route path="/logar" element={<Logar />} />
+            <Route path="/pedido" element={<Pedido />} />
+          </Routes>
+        </div>
+        <Footer />
+      </CartProvider>
     </Router>
   );
 }

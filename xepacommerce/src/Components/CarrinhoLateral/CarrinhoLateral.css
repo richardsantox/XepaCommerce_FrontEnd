@@ -5,3 +5,10 @@
     color: #fff !important;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.034);
 }
+
+
+.imgCart{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}

@@ -6,6 +6,7 @@ import './CardProduto.css';
 import { useNavigate } from 'react-router-dom';
 import Produto from '../../Modelos/ProdutoDTO';
 import { busca } from '../../Services/Service';
+import { useCart } from '../../Hooks/useCart';
 
 export default function Produtos() {
 
@@ -15,6 +16,12 @@ export default function Produtos() {
     async function getProduto() {
         await busca("/api/Produtos", setProdutos, {
         })
+    }
+
+    const { addProduct } = useCart();
+
+    function handleAddCart(productId: number) {
+        addProduct(productId)
     }
 
     useEffect(() => {
@@ -53,7 +60,7 @@ export default function Produtos() {
                                 <h3>
                                     R$ {produto.preco}
                                 </h3>
-                                <Button className='btnComprar'>
+                                <Button className='btnComprar' onClick={() => handleAddCart(produto.id)}>
                                     Comprar
                                 </Button>
                             </CardActions>
