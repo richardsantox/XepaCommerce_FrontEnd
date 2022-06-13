@@ -1,7 +1,7 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Grid, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import "./Equipe.css";
 import React from "react";
@@ -24,13 +24,13 @@ function Equipe() {
                             />
                             <CardActions className="card-icones">
                                 <Box className='redes-equipe'>
-                                    <a href="#" target="_blank">
-                                        <FacebookIcon className='icone-redes' />
+                                    <a href="https://github.com/paulabrufato" target="_blank">
+                                        <GitHubIcon className='icone-redes' />
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.instagram.com/paulabrufato/" target="_blank">
                                         <InstagramIcon className='icone-redes' />
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/in/anapaulariverabrufato/" target="_blank">
                                         <LinkedInIcon className='icone-redes' />
                                     </a>
                                 </Box>
@@ -54,20 +54,20 @@ function Equipe() {
                             />
                             <CardActions className="card-icones">
                                 <Box className='redes-equipe'>
-                                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                        <FacebookIcon className='icone-redes' />
+                                    <a href="https://github.com/richardsantox" target="_blank">
+                                        <GitHubIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                                    <a href="https://www.instagram.com/rsantox_/" target="_blank">
                                         <InstagramIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/richardsantox/" target="_blank">
                                         <LinkedInIcon className='icone-redes' />
                                     </a>
                                 </Box>
                             </CardActions>
                             <CardContent >
                                 <Typography className="nome-equipe" gutterBottom variant="h5" component="h2">
-                                    Richard Santos 
+                                    Richard Santos
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -84,13 +84,13 @@ function Equipe() {
                             />
                             <CardActions className="card-icones">
                                 <Box className='redes-equipe'>
-                                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                        <FacebookIcon className='icone-redes' />
+                                    <a href="https://github.com/TheMires" target="_blank">
+                                        <GitHubIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                                    <a href="https://www.instagram.com/sweethami_/" target="_blank">
                                         <InstagramIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/thamifreitas" target="_blank">
                                         <LinkedInIcon className='icone-redes' />
                                     </a>
                                 </Box>
@@ -114,13 +114,13 @@ function Equipe() {
                             />
                             <CardActions className="card-icones">
                                 <Box className='redes-equipe'>
-                                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                        <FacebookIcon className='icone-redes' />
+                                    <a href="https://github.com/Danny-for" target="_blank">
+                                        <GitHubIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                                    <a href="https://www.instagram.com/danny0_for/" target="_blank">
                                         <InstagramIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/dannyela-geovanna-69944b201/" target="_blank">
                                         <LinkedInIcon className='icone-redes' />
                                     </a>
                                 </Box>
@@ -144,13 +144,13 @@ function Equipe() {
                             />
                             <CardActions className="card-icones">
                                 <Box className='redes-equipe'>
-                                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                        <FacebookIcon className='icone-redes' />
+                                    <a href="https://github.com/Lucas-Reluz" target="_blank">
+                                        <GitHubIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                                    <a href="https://www.instagram.com/lucas_reluz223/" target="_blank">
                                         <InstagramIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/lucas-reluz" target="_blank">
                                         <LinkedInIcon className='icone-redes' />
                                     </a>
                                 </Box>
@@ -174,20 +174,20 @@ function Equipe() {
                             />
                             <CardActions className="card-icones">
                                 <Box className='redes-equipe'>
-                                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                        <FacebookIcon className='icone-redes' />
+                                    <a href="https://github.com/matheuscms95" target="_blank">
+                                        <GitHubIcon className='icone-redes' />
                                     </a>
                                     <a href="https://www.instagram.com/generationbrasil/" target="_blank">
                                         <InstagramIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/matheuscorreia95" target="_blank">
                                         <LinkedInIcon className='icone-redes' />
                                     </a>
                                 </Box>
                             </CardActions>
                             <CardContent >
                                 <Typography className="nome-equipe" gutterBottom variant="h5" component="h2">
-                                    Matheus Correia 
+                                    Matheus Correia
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -204,13 +204,13 @@ function Equipe() {
                             />
                             <CardActions className="card-icones">
                                 <Box className='redes-equipe'>
-                                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                        <FacebookIcon className='icone-redes' />
+                                    <a href="https://github.com/vntsmatos" target="_blank">
+                                        <GitHubIcon className='icone-redes' />
                                     </a>
                                     <a href="https://www.instagram.com/generationbrasil/" target="_blank">
                                         <InstagramIcon className='icone-redes' />
                                     </a>
-                                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/vntsmatos/" target="_blank">
                                         <LinkedInIcon className='icone-redes' />
                                     </a>
                                 </Box>
