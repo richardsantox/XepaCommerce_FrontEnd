@@ -8,11 +8,10 @@
     justify-content: space-around;
 }
 .card-equipe{
-    max-width: 350px;
+    max-width: 320px;
     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75) !important;
     background-color: #23d39b1e !important;
-    margin-bottom: 20px;
-    margin-left: 5px;
+    margin-bottom: 40px;
 }
 .card-icones{
     display: flex;
@@ -38,7 +37,7 @@
 .redes-equipe:hover{
     opacity: 1;
     background-color: #1d856456;
-    max-height: 350px;
+    max-height: 320px;
     transition: 1s;
 }
 
