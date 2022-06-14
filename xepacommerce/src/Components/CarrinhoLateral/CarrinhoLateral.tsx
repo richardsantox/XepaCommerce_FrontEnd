@@ -3,7 +3,7 @@ import { Drawer, Button, Divider,  Badge, IconButton, Typography } from '@materi
 import { ProdutoCarrinho, useCart } from '../../Hooks/useCart';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import "./CarrinhoLateral.css";
 import logoxepa from '../../assets/img/NovoXepa.png';
 
@@ -107,7 +107,7 @@ export default function CarrinhoLateral() {
                         </Typography>
                         <IconButton aria-label="show 1 new mails" className='icone-carrinho'>
                             <Badge badgeContent={cart.length} color="secondary">
-                                <ShoppingCartIcon />
+                                <ShoppingBasketIcon />
                             </Badge>
                         </IconButton>
                     </Button>
