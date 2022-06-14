@@ -1,10 +1,23 @@
-# projeto_integrador_FrontEnd
-##Projeto integrador feito para o bootcamp de .NET da Generation Brasil.
+<h1 align="center">
+  <img src="xepacommerce/src/assets/img/NovoXepa.png" alt="logo" >
 
-### **O que é o projeto:**
+</h1>
+
+<br> 
+
+# projeto_integrador_FrontEnd
+
+## :computer: Projeto
 E-Commerce onde a premissa é conectar pequenos e médios agricultores a população de baixa renda.
 
+## :rocket: Tecnologias
 
+As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
+
+- [HTML](https://devdocs.io/html/)
+- [CSS](https://devdocs.io/css/) 
+- [REACT](https://devdocs.io/react/)
+- [TYPESCRIPT](https://devdocs.io/typescript/)
 ### No front-end definimos uma paleta de cores em _hexadecimal:_
 * 23D39B
 * 0EC6B6
@@ -18,14 +31,19 @@ E-Commerce onde a premissa é conectar pequenos e médios agricultores a popula�
 * Sans Serif
 
 ### **INTEGRANTES DA APLICACAO:**
-> [!div class="checklist"]
-> * ***Ana Paula Bufato***
-> * ***Dannyela Souza***
-> * ***Lucas Reluz***
-> * ***Matheus Correia***
-> * ***Richard Santos***
-> * ***Thamires Aparecida***
-> * ***Vinicius Santos Matos***
+
+* Ana Paula Bufato
+* Dannyela Souza
+* Lucas Reluz
+* Matheus Correia
+* Richard Santos
+* Thamires Aparecida
+* Vinicius Santos Matos
 
 
 Link com o Linkedin e GitHub de todos os participantes: <https://linktr.ee/g4.net>
+
+<br>
+
+## :wrench: ACESSO:
+Para rodar a aplicação, acesse ```EM BREVE...``` no seu navagador.
