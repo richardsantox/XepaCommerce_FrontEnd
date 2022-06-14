@@ -12,6 +12,7 @@ import Navbar2 from '../navbar2/Navbar2';
 import Navbar3 from '../navbar3/Navbar3';
 import "./Navbar.css";
 import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 
 
 export default function Navbar() {
@@ -45,18 +46,25 @@ export default function Navbar() {
   let navigate = useNavigate();
 
   function goLogout() {
-    setToken('');
-    toast.info('Você foi deslogado com sucesso!', {
-      position: "top-right",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: false,
-      draggable: false,
-      theme: "colored",
-      progress: undefined,
-    })
-    navigate('/');
+    if (token != '') {
+      setToken('');
+      toast.info('Você foi deslogado com sucesso!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+      })
+      navigate('/');
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Você não está logado!',
+      });
+    }
   }
 
   return (

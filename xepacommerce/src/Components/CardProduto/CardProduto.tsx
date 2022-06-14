@@ -7,9 +7,12 @@ import { useNavigate } from 'react-router-dom';
 import Produto from '../../Modelos/ProdutoDTO';
 import { busca } from '../../Services/Service';
 import { useCart } from '../../Hooks/useCart';
+import Swal from 'sweetalert2';
+import useLocalStorage from 'react-use-localstorage';
 
 export default function Produtos() {
 
+    const [token, setToken] = useLocalStorage('token');
     const [produtos, setProdutos] = useState<Produto[]>([]);
     let navigate = useNavigate();
 
@@ -21,7 +24,14 @@ export default function Produtos() {
     const { addProduct } = useCart();
 
     function handleAddCart(productId: number) {
-        addProduct(productId)
+        if (token != '') {
+            addProduct(productId)
+        } else {
+            Swal.fire({
+                title: 'Você precisa estar logado!',
+                icon: 'warning',
+            })
+        }
     }
 
     useEffect(() => {
