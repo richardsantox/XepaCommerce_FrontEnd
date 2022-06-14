@@ -2,22 +2,28 @@
 import { Button, Grid, TextField } from '@material-ui/core';
 import { Box, Container } from '@mui/material';
 import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 import "./Contato.css";
 
 function Contato() {
-    function handleClick() {
-        toast.info('Mensagem enviada com sucesso!', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: false,
-            progress: undefined,
-            type: "success",
-            theme: "colored",
-    })};
 
+    function handleClick() {
+        Swal.fire({
+            title: 'Mensagem enviada com sucesso!',
+            icon: 'success',
+        });
+    }
+    /*toast.info('Mensagem enviada com sucesso!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        type: "success",
+        theme: "colored",
+})}; */
     return (
         <>
             <Container >

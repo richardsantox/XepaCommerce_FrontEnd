@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
 import { toast } from 'react-toastify';
+import Produtos from '../Components/CardProduto/CardProduto';
 import Produto from '../Modelos/ProdutoDTO';
 import { api } from '../Services/Service';
 
