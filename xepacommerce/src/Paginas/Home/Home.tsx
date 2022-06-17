@@ -9,8 +9,17 @@ import cenoura from '../../assets/img/cenoura.png';
 import { Box, Grid } from '@mui/material'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
+
 
 function Home() {
+    function handleClick() {
+        Swal.fire({
+            title: 'Card apenas ilustrativo clique no botão abaixo veja mais',
+            icon: 'error',
+        });
+    }
+
     return (
         <>
             <Banner />
@@ -41,7 +50,7 @@ function Home() {
                             <h3>
                                 R$ 3,99
                             </h3>
-                            <Button className='btnComprar'>
+                            <Button onClick={handleClick} className='btnComprar'>
                                 Comprar
                             </Button>
                         </CardActions>
@@ -71,7 +80,7 @@ function Home() {
                             <h3>
                                 R$ 3,99
                             </h3>
-                            <Button className='btnComprar'>
+                            <Button onClick={handleClick} className='btnComprar'>
                                 Comprar
                             </Button>
                         </CardActions>
@@ -101,7 +110,7 @@ function Home() {
                             <h3>
                                 R$ 3,45
                             </h3>
-                            <Button className='btnComprar'>
+                            <Button onClick={handleClick} className='btnComprar'>
                                 Comprar
                             </Button>
                         </CardActions>
