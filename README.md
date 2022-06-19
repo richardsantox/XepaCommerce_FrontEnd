@@ -46,4 +46,4 @@ Link com o Linkedin e GitHub de todos os participantes: <https://linktr.ee/g4.ne
 <br>
 
 ## :wrench: ACESSO:
-Para rodar a aplicação, acesse ```EM BREVE...``` no seu navagador.
+Para rodar a aplicação, acesse ```[XepaCommerce](https://projeto-integrador-front-end.vercel.app/home)``` no seu navagador.
