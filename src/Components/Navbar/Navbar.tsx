@@ -67,84 +67,77 @@ export default function Navbar() {
     }
   }
 
-  if (token != '') {
-    return (
-      <>
-        <p>testeeee</p>
-      </>
-    );
-  } else {
-    return (
-      <div className={classes.root}>
-        <AppBar position="static" className='cor-barra'>
-          <Toolbar className='size-barra'>
-            <Grid container direction="row">
-              <Grid xs={6} >
-                <Box alignItems='center' paddingTop={1}>
-                  <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                    <FacebookIcon className='redes' />
-                  </a>
-                  <a href="https://www.instagram.com/generationbrasil/" target="_blank">
-                    <InstagramIcon className='redes' />
-                  </a>
-                  <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
-                    <LinkedInIcon className='redes' />
-                  </a>
-                </Box>
-              </Grid>
-              <Grid xs={6}>
-                <Box display="flex" justifyContent="flex-end">
-
-                  <div>
-                    <Button
-                      id="basic-button"
-                      aria-controls={open ? 'basic-menu' : undefined}
-                      aria-haspopup="true"
-                      aria-expanded={open ? 'true' : undefined}
-                      onClick={handleClick}
-                      className='login'
-                      color="inherit"
-                    >
-                      <AccountBox className='login' />
-                      <Typography className='login'>
-                        Conta
-                      </Typography>
-                    </Button>
-                    <Menu
-                      id="basic-menu"
-                      anchorEl={anchorEl}
-                      open={open}
-                      onClose={handleClose}
-                      MenuListProps={{
-                        'aria-labelledby': 'basic-button',
-                      }}
-                    >
-                      <MenuItem>
-                        <Link to='/logar' className='text-decorator-none'>
-                          <Typography className='texto-menu-item'>
-                            Login
-                          </Typography>
-                        </Link>
-                      </MenuItem>
-
-                      <MenuItem onClick={goLogout}>
-                        <Typography className='texto-menu-item'>
-                          Logout
-                        </Typography>
-                      </MenuItem>
-                    </Menu>
-
-                  </div>
-                </Box>
-              </Grid>
+  return (
+    <div className={classes.root}>
+      <AppBar position="static" className='cor-barra'>
+        <Toolbar className='size-barra'>
+          <Grid container direction="row">
+            <Grid xs={6} >
+              <Box alignItems='center' paddingTop={1}>
+                <a href="https://www.facebook.com/generationbrasil" target="_blank">
+                  <FacebookIcon className='redes' />
+                </a>
+                <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                  <InstagramIcon className='redes' />
+                </a>
+                <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                  <LinkedInIcon className='redes' />
+                </a>
+              </Box>
             </Grid>
-          </Toolbar>
-        </AppBar>
+            <Grid xs={6}>
+              <Box display="flex" justifyContent="flex-end">
 
-        <Navbar2 />
-        <Navbar3 />
-      </div >
+                <div>
+                  <Button
+                    id="basic-button"
+                    aria-controls={open ? 'basic-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick}
+                    className='login'
+                    color="inherit"
+                  >
+                    <AccountBox className='login' />
+                    <Typography className='login'>
+                      Conta
+                    </Typography>
+                  </Button>
+                  <Menu
+                    id="basic-menu"
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    MenuListProps={{
+                      'aria-labelledby': 'basic-button',
+                    }}
+                  >
+                    <MenuItem>
+                      <Link to='/logar' className='text-decorator-none'>
+                        <Typography className='texto-menu-item'>
+                          Login
+                        </Typography>
+                      </Link>
+                    </MenuItem>
 
-    );
-  }
+                    <MenuItem onClick={goLogout}>
+                      <Typography className='texto-menu-item'>
+                        Logout
+                      </Typography>
+                    </MenuItem>
+                  </Menu>
+
+                </div>
+              </Box>
+            </Grid>
+          </Grid>
+        </Toolbar>
+      </AppBar>
+
+      <Navbar2 />
+      <Navbar3 />
+    </div >
+
+  );
 }
+
