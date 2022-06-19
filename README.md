@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="xepacommerce/src/assets/img/INTEGRANTES.png" alt="logo" >
+  <img src="src/assets/img/INTEGRANTES.png" alt="logo" >
 
 </h1>
 
