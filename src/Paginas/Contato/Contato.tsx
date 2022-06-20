@@ -1,6 +1,7 @@
 
 import { Button, Grid, TextField } from '@material-ui/core';
 import { Box, Container } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
 import "./Contato.css";
@@ -43,9 +44,11 @@ function Contato() {
                                 rows={4}
                                 variant="outlined"
                             />
+                             <Link to='/home' className='link'>
                             <Button onClick={handleClick} variant='contained' className='btnEnviar' fullWidth>
                                 Enviar
                             </Button>
+                            </Link>
                         </form>
                     </Grid>
                     <Grid md={6}>
